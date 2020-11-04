@@ -1,0 +1,217 @@
+*,
+*::before,
+*::after {
+   /* margin: 0;
+   padding: 0; */
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   font-weight: lighter;
+   background-color: #2E323F;
+}
+
+main {
+   width: 100%;
+   max-width: 600px;
+   margin: 0 auto;
+   margin-top: 2em;
+   background-color: #3B4050;
+}
+
+section {
+   max-width: 90%;
+   margin: 0 auto;
+}
+
+section h1 {
+   font-family: "Headline One HPLHS", sans-serif;
+   letter-spacing: .1rem;
+   font-size: 2rem;
+   font-weight: 400;
+   padding-top: 1.5em;
+   text-align: center;
+   color: #FFF;
+}
+
+form button {
+   width: 47%;
+   padding: .7em 0;
+   border: none;
+   border-radius: 0.2em;
+   cursor: pointer;
+
+   transition: transform 2.5s ease-out forwards;
+}
+
+button:hover,
+button:focus {
+   transform: translateY(1.5px);
+   opacity: 80%;
+}
+
+.fa-google {
+   font-weight: bold;
+   font-size: 1.5rem;
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-facebook-square {
+   font-size: 1.5rem;
+   background-color: #3B5898;
+}
+
+.text-center {
+   display: inline-block;
+   vertical-align: top;
+   line-height: 25px;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   margin-left: 0.5em;
+}
+
+.fb-btn {
+   float:right;
+   color: #FFF;
+   background-color: #3B5898;
+}
+
+p {
+   text-align: center;
+   color: #FFF;
+}
+
+fieldset {
+   padding: 0;
+   border: none;
+   margin-bottom: 1em;
+   position: relative;
+}
+
+.label {
+   font-family: "Headline One HPLHS", sans-serif;
+   font-weight: 100;
+   color: #FFF;
+}
+
+.input {
+   margin: 1em 0;
+   width: 100%;
+   padding: 1em;
+   border: none;
+   border-radius: 0.2em;
+}
+
+.fa-eye-slash {
+   position: relative;
+   float: right;
+   top: -2.5em;
+   margin-right: 1em;
+   cursor: pointer;
+}
+
+.input:hover,
+.input:focus {
+   outline: 1px solid #14AAE5;
+}
+
+/* Start custom checkmarker */
+.hide-check {
+   width: 21px;
+   height: 21px;
+   position: absolute;
+   top: 12.9em;
+   left: -.3em;
+   cursor: pointer;
+   opacity: 0;
+   z-index: 1;
+}
+
+input:checked ~ .checkmark::before,
+input:checked ~ .checkmark::after {
+   display: block;
+}
+
+.checkmark {
+   display: block;
+   float: left;
+   position: relative;
+   width: 20px;
+   height: 20px;
+   background-color: #FFF;
+   border-radius: 0.2em;
+   cursor: pointer;
+}
+
+.checkmark::before {
+   display: none;
+   content: " ";
+   position: absolute;
+   width: 35%;
+   height: 15%;
+   bottom: 40%;
+   left: 10%;
+   background-color: #3B5898;
+   transform: rotate(45deg);
+}
+
+.checkmark::after {
+   display: none;
+   content: " ";
+   position: absolute;
+   height: 15%;
+   width: 60%;
+   bottom: 45%;
+   left: 25%;
+   background-color: #3B5898;
+   transform: rotate(135deg);
+}
+/* End custom checkmarker */
+
+.reminder {
+   color: #FFF;
+   font-size: 0.9rem;
+   margin-left: 1em;
+}
+
+.forgot {
+   float: right;
+   text-decoration: none;
+   margin-right: -2.2em;
+   color: #14AAE5;
+   font-size: 0.9rem;
+}
+
+.log-in {
+   width: 100%;
+   color: #FFF;
+   padding: 1em 0;
+   background-color: #14AAE5;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   border: none;
+   border-radius: 0.2em;
+   cursor: pointer;
+}
+
+.footer-p {
+   padding-bottom: 3em;
+}
+
+.register {
+   margin-left: 1em;
+   font-size: 0.9rem;
+   color: #14AAE5;;
+   text-decoration: none;
+}
+
+a:hover,
+a:focus {
+   text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Sign-In</title>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="./css/sign-in.css">
+</head>
+<body>
+   <main>
+   <section>
+      <h1>Sign in with</h1>
+      <form method="get" id="form">
+         <button type="submit" formaction="https://accounts.google.com" formtarget="_blank" class="google-btn">
+            <i class="fab fa-google"></i> <span class="text-center">Google</span>
+         </button>
+         <button type="submit" formaction="https://en-gb.facebook.com/login/" formtarget="_blank" class="fb-btn">
+            <i class="fab fa-facebook-square"></i> <span class="text-center">Facebook</span>
+         </button>
+         <p>or</p>
+         <fieldset>
+            <label class="label">Username or email</label>
+            <input type="text" name="email" class="input" id="name-email" placeholder="Username or email" required>
+            <label class="label">Password</label>
+            <input type="password" name="pass" class="input" id="password" placeholder="Password" required>
+            <i class="fa fa-eye-slash" aria-hidden="true"></i>
+            <input type="checkbox" name="remind" class="check hide-check" id="remind">
+            <span class="checkmark"></span>
+            <label for="remind" class="reminder">Remind me</label>
+            <a href="#" target="_blank" class="forgot">Forgot password</a>
+         </fieldset>
+      </form>
+      <button type="submit" value="Submit" form="form" class="log-in">Log in</button>
+      <p class="footer-p">Is this your first time? <span><a href="#" target="_blank" class="register">Register now</a></span></p>
+   </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,370 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-size: 16px;
+}
+
+img {
+   max-width: 100%;
+}
+
+header {
+   visibility: hidden;
+   background-color: #2E323F;
+   width: 30%;
+   right: 0;
+   position: absolute;
+   position: fixed;
+}
+
+/* Hamburger menu */
+.nav-toggle {
+   cursor: pointer;
+   width: 3em;
+   height: 3em;
+   padding: 0;
+   color: #FFF;
+   border: 0;
+   border-radius: 50%;
+   background-color: #6F737F;
+   transition: opacity 250ms ease;
+
+   position: absolute;
+   right: 0;
+   margin: 20px;
+
+   visibility: visible;
+}
+
+.nav-toggle:hover,
+.nav-toogle:focus {
+   opacity: .75;
+}
+.hamburger {
+   width: 50%;
+   position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+   display: block;
+   margin: 0 auto;
+   height: 3px;
+   background-color: #FFF;
+}
+
+.hamburger::before,
+.hamburger::after {
+   content: '';
+   width: 100%;
+   position: absolute;
+}
+
+.hamburger::before {
+   transform: translateY(-6px);
+}
+
+.hamburger::after {
+   transform: translateY(6px);
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: .5rem;
+}
+
+.row {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+/* Navigation styles */
+.nav {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   height: 100vh;
+}
+
+.nav-list {
+   padding: 0;
+   margin-bottom: 5rem;
+}
+
+.nav-item {
+   text-align: center;
+   margin-bottom: 2.5rem;
+   list-style: none;
+}
+
+.nav-link {
+   text-decoration: none;
+   text-transform: uppercase;
+   font-family: "Headline One HPLHS", sans-serif;
+   font-size: 24px;
+   font-weight: 500;
+   letter-spacing: 0.1rem;
+   color: #FFF;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.btn-second:hover,
+.btn-second:focus {
+   opacity: .75;
+}
+
+.btn {
+   background-color: #A59678;
+   padding: .5rem 1rem .5rem 1rem;
+   border-radius: 100px;
+}
+
+/* First section styles */
+.hero {
+   background-color: #3B4050;
+}
+
+.primary-content {
+   padding-bottom: 2rem;
+}
+
+ .title {
+    color: #FFF;
+    font-size: 30px;
+    font-family: "Headline One HPLHS", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+.br-title {
+   color: #A59678;
+   font-size: 30px;
+   font-family: "Headline One HPLHS", sans-serif;
+   font-weight: 500;
+}
+
+.paragraph {
+   color: #FFF;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 300;
+}
+
+.btn-second {
+   color: #FFF;
+   font-family: "Headline One HPLHS", sans-serif;
+   font-weight: lighter;
+   letter-spacing: 0.1rem;
+   text-transform: uppercase;
+   border: none;
+   cursor: pointer;
+   padding: 1em;
+}
+
+/* Second section styles */
+.secondary-content {
+   text-align: center;
+}
+
+.section-title {
+   color: #A59678;
+   font-family: "Headline One HPLHS", sans-serif;
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.section-paragraph {
+   max-width: 50%;
+   margin: 0 auto;
+   margin-bottom: 2rem;
+   color: #3B4050;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 300;
+}
+
+/* Third section styles */
+.third-title {
+   color: #A59678;
+   font-family: "Headline One HPLHS", sans-serif;
+   font-size: 25px;
+   font-weight: 500;
+}
+
+.third-paragraph {
+   color: #3B4050;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 300;
+   font-size: 17px;
+   margin-bottom: auto;
+}
+
+/* Aside styles */
+.sidebar {
+   background-color: #3B4050;
+   max-width: 80%;
+   text-align: center;
+   color: #FFF;
+   margin: 0 auto;
+}
+
+.aside-title {
+   font-family: "Headline One HPLHS", sans-serif;
+   font-size: 25px;
+   font-weight: 500;
+   padding-top: 2rem;
+}
+
+.aside-paragraph {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 17px;
+   font-weight: 300;
+   padding: 0 2rem 2rem;
+}
+
+/* Footer styles */
+.footer {
+   background-color: #3B4050;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.title-footer {
+   font-family: "Headline One HPLHS", sans-serif;
+   font-size: 30px;
+   font-weight: 500;
+   letter-spacing: 0.1rem;
+   color: #FFF;
+   text-align: center;
+}
+
+.title-small {
+   color: #A59678;
+   font-family: "Headline One HPLHS", sans-serif;
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.paragraph-footer,
+.footer-link {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 17px;
+   font-weight: 400;
+   color: #6F737F;
+}
+
+.footer-list {
+   padding: 0;
+}
+
+.footer-item {
+   list-style: none;
+   padding: .5rem;
+}
+
+.footer-link {
+   text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+   color: #FFF;
+}
+
+@media only screen and (min-width: 700px) {
+   .aside-content {
+      display: flex;
+   }
+
+   .sidebar {
+      margin: .5rem;
+   }
+
+   .footer-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: left;
+   }
+
+   .content-footer:first-child {
+      margin-left: 0;
+      width: 40%;
+   }
+}
+
+@media only screen and (min-width: 1000px) {
+   header {
+      visibility: inherit;
+      width: 100%;
+      position: fixed;
+      top: 0;
+   }
+
+   .hero {
+      margin-top: 73px;
+   }
+
+   .nav-toggle {
+      display: none;
+   }
+
+   .row {
+      flex-direction: row;
+   }
+
+   .nav {
+      flex-direction: row;
+      justify-content: flex-end;
+      height: 100%;
+   }
+
+   .nav-list {
+      display: flex;
+      margin: inherit;
+   }
+
+   .nav-item {
+      padding: 1em 0;
+      margin: 0 0 0 1em;
+   }
+
+   .nav-item:nth-child(3) {
+      margin-right: 5em;
+   }
+
+   .main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 5rem;
+   }
+
+   .hero-third {
+      width: 100%;
+   }
+
+   .aside-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items:flex-end;
+      width: 70%;
+   }
+}
+
+@media only screen and (max-width: 500px) {
+   .title {
+      max-width: 85%;
+   }
+}
